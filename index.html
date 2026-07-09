@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Bagian Input Nama -->
+        <div id="input-section">
+            <h2>Selamat Datang!</h2>
+            <p>Silakan isi nama kamu terlebih dahulu:</p>
+            <input type="text" id="nama-user" placeholder="Isi nama kamu disini...">
+            <button onclick="mulaiWebsite()">Masuk</button>
+        </div>
+
+        <!-- Bagian Konten Utama (Disembunyikan di awal) -->
+        <div id="main-content" class="hidden">
+            <h2 id="sapaan"></h2>
+            <p>Klik gambar di bawah ini untuk melihat kejutan!</p>
+            
+            <!-- Gambar yang bisa diklik -->
+            <div class="image-wrapper" onclick="tampilkanKejutan()">
+                <img src="https://placeholder.com" alt="Gambar Klik" id="gambar-utama">
+            </div>
+
+            <!-- Tempat munculnya teks/gambar baru -->
+            <div id="kotak-kejutan" class="hidden">
+                <p id="teks-kejutan">Wah, kamu berhasil memunculkan teks ini!</p>
+                <img src="https://placeholder.com" alt="Gambar Kejutan" id="gambar-kejutan">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
